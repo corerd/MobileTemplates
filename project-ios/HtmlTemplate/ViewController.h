@@ -1,6 +1,6 @@
 //
 //  ViewController.h
-//  MindReader-iOS
+//  HtmlTemplate
 //
 //  Created by Corrado Ubezio on 09/03/13.
 //  Copyright (c) 2013 Corerd. All rights reserved.
@@ -40,5 +40,11 @@
 
 /// Connect to the iPad ViewController UIWebView.
 @property (retain, nonatomic) IBOutlet UIWebView *iPadWebView;
+
+/// Action on tapping the Home Button at the iPhone Toolbar
+- (IBAction)iPhoneBtnHome:(id)sender;
+
+/// Action on tapping the Home Button at the iPad Toolbar
+- (IBAction)iPadBtnHome:(id)sender;
 
 @end
