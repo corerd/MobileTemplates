@@ -1,4 +1,0 @@
-INDEX VERSION 1.126+/Users/corerd/Devel/html/MobileTemplates/project-android/.metadata/.plugins/org.eclipse.jdt.core
-1493777666.index
-173827013.index
-1989437425.index

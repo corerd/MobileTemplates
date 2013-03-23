@@ -40,6 +40,8 @@ import android.webkit.WebView;
 
 public class MainActivity extends Activity {
 
+	WebView myWebView;
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,7 +49,7 @@ public class MainActivity extends Activity {
 
         // create an instance of WebView in the current contextView
         // and fill the entire screen width
-        WebView myWebView = (WebView) findViewById(R.id.webview);
+        myWebView = (WebView) findViewById(R.id.webview);
         myWebView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         
         // enable JavaScript
@@ -55,7 +57,7 @@ public class MainActivity extends Activity {
         webSettings.setJavaScriptEnabled(true);
         
         // load up the html data together the CSS and Javascript files
-        myWebView.loadUrl("file:///android_asset/www/index.html");
+        myWebView.loadUrl("file:///android_asset/www/html/index.html");
     }
 
 
@@ -64,6 +66,11 @@ public class MainActivity extends Activity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
+    }
+
+    /// On tapping Home Button
+    public void reloadHomeUrl(View view) {
+        myWebView.loadUrl("file:///android_asset/www/html/index.html");
     }
     
 }

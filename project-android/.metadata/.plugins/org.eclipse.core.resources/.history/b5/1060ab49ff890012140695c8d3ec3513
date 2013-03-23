@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<lint>
-    <issue id="SetJavaScriptEnabled">
-        <ignore path="src/corerd/com/github/jquerydemo_android/MainActivity.java" />
-    </issue>
-</lint>
